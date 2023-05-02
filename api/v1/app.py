@@ -26,8 +26,6 @@ def page_not_foun(error):
     return make_response(jsonify({"error": "Not found"}), 404)
 
 
-app.config['SWAGGER'] = {
-   
 if __name__ == "__main__":
 
     host = getenv('HBNB_API_HOST', default='0.0.0.0')
